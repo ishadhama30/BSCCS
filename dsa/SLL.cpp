@@ -140,7 +140,26 @@ class node{
         cout<<"Element not found ";
         return 0 ;
 
-    }    
+    }   
+void SLL::concat(){
+
+        temp1 = new node ;
+        temp1->data = 59 ; 
+        node* first2 = temp1 ;
+        temp1->next = NULL ;
+        node* temp2 = new node ;
+        int x ;
+        cout<<"Enter the data of this node : ";
+        cin>>x;
+        temp2->data=x;
+        temp2->next=NULL;
+        temp1->next = temp2 ;
+
+
+        node* temp22 = first2 ;
+        last->next = first2 ;
+        display();
+    } 
     void SLL::display(){
         temp=first;
         while(temp!=NULL)
